@@ -4,7 +4,7 @@
 <link rel="import" href="top-menu.html">
 
 <!-- Defines the example-template element -->
-<dom-module id="content-area">
+<dom-module id="dashboard-view">
 	
     <template>
     	<style>
@@ -17,7 +17,6 @@
     			vertical-align: top;
     		}
     	</style>
-    	<side-bar></side-bar>
 		<div class="main-area">
 			<top-menu id="topMenu"></top-menu>
 		</div>
@@ -25,11 +24,11 @@
 
     <!-- Polymer boilerplate to register the example-template element -->
     <script>
-        class ContentArea extends Polymer.Element {
+        class DashboardView extends Polymer.Element {
             static get is() {
-                return 'content-area'
+                return 'dashboard-view'
             }
         }
-        customElements.define(ContentArea.is, ContentArea);
+        customElements.define(DashboardView.is, DashboardView);
     </script>
 </dom-module>
