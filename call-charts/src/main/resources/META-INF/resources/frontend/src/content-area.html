@@ -1,0 +1,35 @@
+<!-- Dependency resources -->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="side-bar.html">
+<link rel="import" href="top-menu.html">
+
+<!-- Defines the example-template element -->
+<dom-module id="content-area">
+	
+    <template>
+    	<style>
+    		:host{
+    			display:box;
+    			width: auto;
+    			height:auto;
+    		}
+    		.main-area{
+    			vertical-align: top;
+    		}
+    	</style>
+    	<side-bar></side-bar>
+		<div class="main-area">
+			<top-menu id="topMenu"></top-menu>
+		</div>
+    </template>
+
+    <!-- Polymer boilerplate to register the example-template element -->
+    <script>
+        class ContentArea extends Polymer.Element {
+            static get is() {
+                return 'content-area'
+            }
+        }
+        customElements.define(ContentArea.is, ContentArea);
+    </script>
+</dom-module>
