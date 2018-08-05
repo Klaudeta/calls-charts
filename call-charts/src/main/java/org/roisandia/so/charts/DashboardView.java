@@ -16,14 +16,15 @@ public class DashboardView extends PolymerTemplate<TemplateModel> {
   @Id
   private TopMenu topMenu;
 
-  @Id("deliveriesThisMonth")
+  @Id("callsThisMonth")
   private Chart callsThisMonthChart;
 
-  @Id("deliveriesThisYear")
+  @Id("callsThisYear")
   private Chart callsThisYearChart;
 
   public DashboardView() {
 
     // TODO 1. call chart service/presenter to create Chart Cards
+
   }
 }
